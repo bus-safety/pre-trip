@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>School Bus Pre-Trip Script</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>School Bus Pre-Trip Script (PA Modernized Checklist Order)</title>
 <style>
   :root { --fg:#111; --border:#ddd; --bg:#fff; }
   * { box-sizing: border-box; }
@@ -12,168 +13,148 @@
   .container { max-width:900px; margin:0 auto; padding:16px 20px 64px; }
   section { margin:18px 0; break-inside: avoid; }
   .card { border:1px solid var(--border); border-radius:10px; padding:12px 14px; margin:10px 0; }
+  .subcard { border:1px solid var(--border); border-radius:10px; padding:10px 12px; margin:10px 0; }
   .step { font-weight:700; margin:0 0 8px 0; }
+  .substep { font-weight:700; margin:0 0 6px 0; }
   ul { margin:6px 0 8px 20px; }
   li { margin:2px 0 4px; }
   .checkbox { display:inline-block; width:14px; height:14px; border:1px solid var(--border); border-radius:3px; margin-right:8px; vertical-align:-2px; }
-  .say { font-style:italic; color:#555; }
+  .say { font-style:italic; color:#555; margin:6px 0 0; }
   @media print {
     body { font-size:12px; }
     .container { padding:6mm 8mm; }
     section { page-break-inside: avoid; }
-    .card { border:1px solid #ccc; }
+    .card, .subcard { border:1px solid #ccc; }
   }
 </style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
+<section>
+<div class="card">
+<p class="step">1) Air Brake Check (4 parts)</p>
+<p class="say">Say: We are parked on level ground. If not, I would chock the wheels.</p>
+<div class="subcard">
+<p class="substep">A) Governor Cut-Out</p>
+<ul>
+<li><span class="checkbox"></span><span class="say">Say:</span> Governor cut-out is <strong>120–140 PSI</strong>.</li>
+<li><span class="checkbox"></span>Start engine and build air pressure until it reaches cut-out.</li>
+</ul>
+</div>
+<div class="subcard">
+<p class="substep">B) Applied Leak Test</p>
+<ul>
+<li><span class="checkbox"></span><span class="say">Say:</span> I will shut the engine off, turn the key completely <strong>OFF</strong>, then back to <strong>ON</strong> (not AUX) without starting. The engine will remain off for the rest of the air brake test.</li>
+<li><span class="checkbox"></span><span class="say">Say:</span> Air loss is <strong>≤ 3 PSI</strong> in 1 minute (single vehicle).</li>
+<li><span class="checkbox"></span>Key on, parking brake released, fully apply foot brake and hold 1 minute.</li>
+</ul>
+</div>
+<div class="subcard">
+<p class="substep">C) Low-Air Warning</p>
+<ul>
+<li><span class="checkbox"></span><span class="say">Say:</span> Low-air warning activates <strong>before 55 PSI</strong>.</li>
+<li><span class="checkbox"></span>Fan the brakes until the warning activates (light and buzzer).</li>
+</ul>
+</div>
+<div class="subcard">
+<p class="substep">D) Spring-Brake Pop-Out</p>
+<ul>
+<li><span class="checkbox"></span><span class="say">Say:</span> Spring-brake pop-out is <strong>20–45 PSI</strong>.</li>
+<li><span class="checkbox"></span>Continue fanning brakes until the parking/emergency valve pops out.</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">2) In-vehicle (key on) checks</p>
+<ul>
+<li><span class="checkbox"></span>Parking Brake Check: With parking brake engaged, gently accelerate; bus should not move.</li>
+<li><span class="checkbox"></span>Service Brake Check: Release parking brake; pull forward ~5 mph; apply service brake to a complete stop; vehicle does not pull.</li>
+<li><span class="checkbox"></span>Lighting indicators: left, right, four-ways, high beam, ABS, DEF if equipped.</li>
+<li><span class="checkbox"></span>Emergency equipment: 3 triangles; fire extinguisher charged and mounted; spare fuses or identify circuit breakers.</li>
+<li><span class="checkbox"></span>Windshield &amp; traffic monitoring devices: windshield clean/no damage; mirrors clean/adjusted; cameras clean/operable if equipped.</li>
+<li><span class="checkbox"></span>Wipers &amp; washers: spray and wipe; arms/blades secure.</li>
+<li><span class="checkbox"></span>Heater &amp; defroster: identify controls; demonstrate airflow.</li>
+<li><span class="checkbox"></span>Horn(s): works.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">3) Passenger area</p>
+<ul>
+<li><span class="checkbox"></span>Entry door not damaged; operates smoothly; closes securely from inside.</li>
+<li><span class="checkbox"></span>Handrails secure; step light(s) work if equipped; steps clear and tread not loose or worn.</li>
+<li><span class="checkbox"></span>Lift (if equipped) has no leaks/damage/missing parts; fully retracted and latched.</li>
+<li><span class="checkbox"></span>Emergency exits interior: labeled, not damaged, operate smoothly, close securely. Demonstrate at least one exit; with key on, alarms sound. <span class="say">Say: I would test the other emergency exits the same as this one.</span></li>
+<li><span class="checkbox"></span>Passenger seating: inspect one seat; frame not broken; frame attached to floor; cushion secured. <span class="say">Say: I would check all other seats the same as this one.</span></li>
+<li><span class="checkbox"></span>Passenger monitoring devices: internal and external mirrors/cameras clean, adjusted, brackets secure; include student crossover mirrors.</li>
+<li><span class="checkbox"></span>Student warning lights (front &amp; back): activate ambers then reds (and strobe if equipped); dash indicators work; lights operational.</li>
+<li><span class="checkbox"></span>Stop arm(s) &amp; safety arm: securely mounted, not damaged; demonstrate extend fully; stop arm lights operational; dash indicator works; safety arm extends.</li>
+<li><span class="checkbox"></span>First aid &amp; body fluid kits present; seals not broken.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">4) Light check with examiner assistance</p>
+<p class="say">Say: Examiner, could you please assist me with my light check.</p>
+<ul>
+<li><span class="checkbox"></span>Front: low beams then high-beam indicator; left/right turn and four-ways; clearance/markers.</li>
+<li><span class="checkbox"></span>Sides: side clearance/markers.</li>
+<li><span class="checkbox"></span>Rear: tail, brake, reverse; left/right turn and four-ways; clearance/markers.</li>
 
-    <section>
-      <div class="card">
-        <p class="step">1) Front exterior, hood closed (top to bottom)</p>
-        <ul>
-          <li><span class="checkbox"></span>Student warning light lenses (front) and strobe (if equipped) proper color and condition; housings secure.</li>
-          <li><span class="checkbox"></span>Front clearance and marker lenses proper color and condition; housings secure.</li>
-          <li><span class="checkbox"></span>Front reflectors present, proper color, clean, not cracked or missing; secure.</li>
-          <li><span class="checkbox"></span>Windshield and seal not cracked or broken; seal has no dry rot; glass secure.</li>
-          <li><span class="checkbox"></span>Wiper arms and blades not cracked or broken; blades not dry rotted; arms secure.</li>
-          <li><span class="checkbox"></span>Headlight lenses clean and not cracked or loose; housings secure.</li>
-          <li><span class="checkbox"></span>Front turn signal and four-way lenses proper color and condition; housings secure.</li>
-          <li><span class="checkbox"></span>Exterior mirrors and brackets clean, adjusted, and secure.</li>
-          <li><span class="checkbox"></span>Overall stance not leaning; level front to rear and side to side.</li>
-          <li><span class="checkbox"></span>Ground/underbody no puddles or dripping fluids; no hazards around bus.</li>
-        </ul>
-        <p class="say">Say: I will now open the hood.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">2) Hood open, engine area (fluids first, then inside out)</p>
-        <ul>
-          <li><span class="checkbox"></span>Fluids: coolant level between marks, cap present, no leaks; engine oil proper level (pull, wipe, reinsert, read), cap present; power steering fluid level proper, no leaks; listen for air leaks. If hydraulic, check brake fluid reservoir level and cap.</li>
-          <li><span class="checkbox"></span>Steering system: steering box mounted with bolts, no leaks; linkage joints (pitman arm, drag link, tie-rod ends) secured with <strong>castle nuts and cotter pins</strong>, not loose or worn.</li>
-          <li><span class="checkbox"></span>Front suspension: springs not cracked, bent, broken, shifted, or missing; front/rear hangers bolted; <strong>U-bolts</strong> present and secured with nuts; shocks bolted both ends, no leaks; air bags (if equipped) mounted top and bottom, no leaks.</li>
-          <li><span class="checkbox"></span>Front brakes: hoses/lines no cracks, wear, frays, or leaks; fittings tight; (if visible) chamber clamped and mounted, not leaking; <em>no brake contamination</em> on visible linings/drums/rotors.</li>
-          <li><span class="checkbox"></span>Steering axle wheel group: tire ICD (gauge inflation, no cuts/bulges, depth ≥ 4/32 in, valve stem & cap present); rim no cracks or weld repairs; all lug nuts tight (no rust trails/shiny threads); hub or axle seal not leaking.</li>
-        </ul>
-        <p class="say">Say: I would check the other wheel the same as this one. I would check the other suspension the same as this side.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">3) Driver side exterior (top to bottom)</p>
-        <ul>
-          <li><span class="checkbox"></span>Side lenses and reflectors proper color and condition; housings secure.</li>
-          <li><span class="checkbox"></span>Passenger monitoring devices (external mirrors/cameras) clean, adjusted, brackets secure.</li>
-          <li><span class="checkbox"></span>Battery box: batteries held down; connections tight with no excessive corrosion; cables insulated; box/cover latched.</li>
-          <li><span class="checkbox"></span>Frame and crossmembers: no cracks, broken welds, holes, or damage.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">4) Driver side axles (inside out)</p>
-        <ul>
-          <li><span class="checkbox"></span>Suspension: springs not cracked, bent, broken, shifted, or missing; hangers bolted; U-bolts with nuts secure; shocks bolted both ends; air bags mounted top/bottom and not leaking.</li>
-          <li><span class="checkbox"></span>Brakes: hoses/lines no cracks, wear, frays, or leaks; fittings tight; (if visible) chambers clamped/mounted; <em>no brake contamination</em> on visible linings/drums/rotors.</li>
-          <li><span class="checkbox"></span>Wheels: tires ICD (gauge inflation, no cuts/bulges, depth ≥ 2/32 in on non-steer), rims no cracks or weld repairs, all lug nuts present/tight, axle or hub seal not leaking.</li>
-        </ul>
-        <p class="say">Say: I would check the other axles the same as this one.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">5) Rear</p>
-        <ul>
-          <li><span class="checkbox"></span>Student warning light lenses (rear) proper color and condition; strobe if equipped; housings secure.</li>
-          <li><span class="checkbox"></span>Rear lenses: tail, brake, reverse, turn, four-ways, clearance/markers proper color and condition; housings secure.</li>
-          <li><span class="checkbox"></span>Rear reflectors: present, proper color, clean, not cracked or missing; secure.</li>
-          <li><span class="checkbox"></span>Rear emergency door exterior: opens, locks open, then closes securely.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">6) Passenger side + Fuel/DEF</p>
-        <ul>
-          <li><span class="checkbox"></span>Passenger side: I would inspect this side the same as the driver side (lenses/reflectors, monitoring devices, battery if equipped/accessible, frame).</li>
-          <li><span class="checkbox"></span>Fuel tank: secured with straps/brackets and bolts; cap tight; no leaks from tank or lines.</li>
-          <li><span class="checkbox"></span>DEF tank (if equipped): secured with straps; cap present; no leaks.</li>
-        </ul>
-        <p class="say">Say: I will now close the hood.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">7) Passenger entry door and steps</p>
-        <ul>
-          <li><span class="checkbox"></span>Entry door not damaged; operates smoothly; closes securely from inside.</li>
-          <li><span class="checkbox"></span>Handrails secure; step light(s) work if equipped; steps clear and tread not loose or worn.</li>
-          <li><span class="checkbox"></span>Lift (if equipped) has no leaks/damage/missing parts; fully retracted and latched.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">8) In-vehicle (key on) checks</p>
-        <ul>
-          <li><span class="checkbox"></span>Emergency equipment: 3 triangles; fire extinguisher charged and mounted; spare fuses or identify circuit breakers.</li>
-          <li><span class="checkbox"></span>First aid kit and body fluid cleanup kit present.</li>
-          <li><span class="checkbox"></span>Lighting indicators: left, right, four-ways, high beam, ABS, DEF if equipped.</li>
-          <li><span class="checkbox"></span>Windshield & traffic monitoring devices: windshield clean/no damage; mirrors clean/adjusted; cameras clean/operable if equipped.</li>
-          <li><span class="checkbox"></span>Wipers & washers: spray and wipe; arms/blades secure.</li>
-          <li><span class="checkbox"></span>Heater & defroster: identify controls; demonstrate airflow.</li>
-          <li><span class="checkbox"></span>Horn(s): works.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">9) Interior student area & emergency exits</p>
-        <ul>
-          <li><span class="checkbox"></span>Passenger seating: inspect one seat; frame not broken; frame attached to floor; cushion secured. <strong>Say: I would check all other seats the same as this one.</strong></li>
-          <li><span class="checkbox"></span>Emergency exits interior: labeled, not damaged, operate smoothly, close securely. Demonstrate at least one exit; verify inside/outside handles; with key on, alarms sound. <strong>Say: I would test the other emergency exits the same as this one.</strong></li>
-          <li><span class="checkbox"></span>Passenger monitoring devices: internal and external mirrors/cameras clean, adjusted, brackets secure; include student crossover mirrors.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">10) Light check with examiner assistance</p>
-        <p class="say">Say: Examiner, could you please assist me with my light check.</p>
-        <ul>
-          <li><span class="checkbox"></span>Front: low beams then high-beam indicator; left/right turn and four-ways; clearance/markers; student warning lights (front) and strobe if equipped.</li>
-          <li><span class="checkbox"></span>Sides: side clearance/markers and side reflectors.</li>
-          <li><span class="checkbox"></span>Rear: tail, brake, reverse; left/right turn and four-ways; clearance/markers; student warning lights (rear) and strobe if equipped.</li>
-          <li><span class="checkbox"></span>Stop arm and safety arm: demonstrate full extend and return; dash indicator works.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <p class="step">11) Brake system tests (labeled for study)</p>
-        <ul>
-          <li><span class="checkbox"></span><strong>A. Governor Cut-Out:</strong> Air builds to cutoff <strong>120–140 PSI</strong>.</li>
-          <li><span class="checkbox"></span><strong>B. Applied Leak Test:</strong> Key on, parking brake released, fully apply foot brake and hold 1 minute; drop is <strong>≤ 3 PSI</strong> (single vehicle).</li>
-          <li><span class="checkbox"></span><strong>C. Low-Air Warning:</strong> Warning activates <strong>before 55 PSI</strong>.</li>
-          <li><span class="checkbox"></span><strong>D. Spring-Brake Pop-Out:</strong> Parking/emergency valve pops <strong>20–45 PSI</strong>.</li>
-          <li><span class="checkbox"></span><strong>E. Parking Brake Check:</strong> With parking brake engaged, gently accelerate; bus should not move.</li>
-          <li><span class="checkbox"></span><strong>F. Service Brake Check:</strong> Release parking brake; pull forward ~5 mph; apply service brake to a complete stop; vehicle does not pull.</li>
-          <li><span class="checkbox"></span><strong>Hydraulic Alternate (if equipped):</strong> Pump 3 times, hold 5 seconds; pedal should not move after initial application; confirm power assist.</li>
-        </ul>
-      </div>
-    </section>
-
-  </div>
+</ul>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">5) Front of Vehicle / Engine Area (Passenger side exterior)</p>
+<p class="say">Say: For the exterior inspection, I will inspect the passenger side of the bus.</p>
+<ul>
+<li><span class="checkbox"></span>Lenses: clean, proper color, not cracked or loose; housings secure.</li>
+<li><span class="checkbox"></span>Fluid levels: coolant between marks; engine oil proper level; power steering fluid level proper; caps present.</li>
+<li><span class="checkbox"></span>Fluid &amp; air leaks: no puddles/drips; no leaks from hoses/lines; listen for air leaks.</li>
+<li><span class="checkbox"></span>Steering systems: steering box mounted with bolts, no leaks; linkage joints (pitman arm, drag link, tie-rod ends) secured with <strong>castle nuts and cotter pins</strong>, not loose or worn.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">6) Steering Axle (Passenger side)</p>
+<ul>
+<li><span class="checkbox"></span>Tires: properly inflated; no cuts/bulges; tread depth ≥ <strong>4/32</strong>; valve stem and cap present.</li>
+<li><span class="checkbox"></span>Rims: no cracks or weld repairs.</li>
+<li><span class="checkbox"></span>Lug nuts: all present and tight; no rust trails/shiny threads.</li>
+<li><span class="checkbox"></span>Springs/mounts &amp; air bags &amp; shocks: not cracked, bent, broken, shifted, missing; mounted securely; no leaks.</li>
+<li><span class="checkbox"></span>Brake lines or hoses &amp; leaks: not cracked, worn, frayed, or leaking; fittings tight.</li>
+<li><span class="checkbox"></span>Brake contaminates: no oil/grease/fluid contamination on visible brake components.</li>
+</ul>
+<p class="say">Say: I would check the other steering axle the same as this one.</p>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">7) Side of Vehicle (Passenger side)</p>
+<ul>
+<li><span class="checkbox"></span>Lenses &amp; reflectors: present, proper color, clean, not cracked or missing; secure.</li>
+<li><span class="checkbox"></span>Traffic monitoring devices: external mirrors/cameras clean, adjusted, brackets secure.</li>
+<li><span class="checkbox"></span>Battery: <span class="say">I would inspect the battery box on the other side</span> for securement; connections tight; no excessive corrosion; cables not frayed; cover latched.</li>
+<li><span class="checkbox"></span>Fuel tank(s)/DEF tank: secured with straps/brackets; caps present/tight; no leaks.</li>
+<li><span class="checkbox"></span>Frame(s): no cracks, broken welds, holes, or damage.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="card">
+<p class="step">8) Rear of Vehicle</p>
+<ul>
+<li><span class="checkbox"></span>Lenses &amp; reflectors: present, proper color, clean, not cracked or missing; secure.</li>
+</ul>
+<p class="say">Say: I would check the other side the same, with the addition of the battery box and stop arm (stop sign) for securement and damage.</p>
+</div>
+</section>
+</div>
 </body>
 </html>
